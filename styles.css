@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav {
+    position: absolute;
+    top: 35%;
+    right: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #45a049;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #3e8e41;
+}
+
+.boxer{
+    max-width: 80vw;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+
+.container {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-center{
+    text-align: center;
+    border-radius: 5px;
+    color: #4CAF50;
+    background-color: #fff;
+}
+
+
+
+.product {
+    align-items: flex-start;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: Open Sans,Arial,Helvetica,sans-serif;
+    padding: 5px;
+    margin: 10px 0px;
+    position: relative;
+    border-color: #ddd; 
+}
+
+.product_image{
+    border-radius: 4px;
+    flex: 0 0 200px;
+    height: 130px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.cart_image{
+    border-radius: 4px;
+    flex: 0 0 210px;
+    height: 200px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.cart_image img{
+    height: 100%;
+}
+
+
+
+.product_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product_detale{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    min-height: 120px;
+    min-width: 0;
+    justify-content: space-evenly;
+}
+
+.product_detale_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_detale_down{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+.product_detale_down button {
+    padding: 10px;
+    margin-top: auto; 
+    border: 1px solid #ddd;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product_detale_down button:hover {
+    background-color: #45a049;
+}
+
+.product h3 {
+    color: #4CAF50;
+}
+
+
+.product p {
+    margin: 10px 0;
+    overflow: auto; 
+}
+
+.product a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+.container .image-gallery .main-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container .image-gallery .main-image img{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.container .image-gallery .thumbnails {
+    display: flex;
+    justify-content: center;
+}
+
+.container .image-gallery .thumbnail {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.container .order-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.order h3 {
+    margin: 0 0 10px;
+}
+
+.order p {
+    margin: 5px 0;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/*
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+*/
+
+
+
+
+
+.form-container{
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    max-width: 30vw;
+    text-wrap: balance;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Стили для формы */
+.form-container form {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 85px;
+}
+
+.form-container form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+}
+
+.form-container form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 180px;
+    margin: auto;
+}
+
+
+
+/* Стили для сообщения об ошибке */
+.error-message {
+    color: red;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Mobile styles */
+    .container {
+        flex-direction: column;
+    }
+}
